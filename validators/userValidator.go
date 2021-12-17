@@ -9,6 +9,6 @@ import (
 
 func ValidatePictureUrl(field validator.FieldLevel) bool {
 	str := fmt.Sprintf("%s", field.Field())
-	format := str[len(str)-3 : len(str)]
+	format := str[len(str)-3:]
 	return strings.Compare(strings.TrimSpace(format), "png") == 0
 }

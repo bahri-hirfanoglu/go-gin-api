@@ -8,6 +8,8 @@
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8000
 [GIN-debug] redirecting request 307: /users/ --> /users/
-[GIN] 2021/12/17 - 17:48:55 | 200 |     503.243µs |             ::1 | POST     "/users/"
+[GIN] 2021/12/17 - 17:50:21 | 400 |     448.164µs |             ::1 | POST     "/users/"
 [GIN-debug] redirecting request 307: /users/ --> /users/
-[GIN] 2021/12/17 - 17:48:59 | 400 |     239.365µs |             ::1 | POST     "/users/"
+[GIN] 2021/12/17 - 17:50:26 | 200 |     158.779µs |             ::1 | POST     "/users/"
+[GIN-debug] redirecting request 301: /users/ --> /users/
+[GIN] 2021/12/17 - 17:50:28 | 200 |       37.44µs |             ::1 | GET      "/users/"
