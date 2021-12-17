@@ -2,6 +2,7 @@ package main
 
 import (
 	"gin-framework-api/middlewares"
+	"gin-framework-api/routes"
 	"io"
 	"log"
 	"os"
@@ -30,5 +31,6 @@ func main() {
 	server := gin.New()
 
 	server.Use(gin.Recovery(), gin.Logger(), middlewares.BasicAuth(USER, PASS))
+	routes.Routes(server)
 	log.Fatal(server.Run(":" + PORT))
 }

@@ -2,6 +2,12 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
+[GIN-debug] GET    /users/                   --> gin-framework-api/routes.Routes.func1 (4 handlers)
+[GIN-debug] POST   /users/                   --> gin-framework-api/routes.Routes.func2 (4 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8000
+[GIN-debug] redirecting request 307: /users/ --> /users/
+[GIN] 2021/12/17 - 17:48:55 | 200 |     503.243µs |             ::1 | POST     "/users/"
+[GIN-debug] redirecting request 307: /users/ --> /users/
+[GIN] 2021/12/17 - 17:48:59 | 400 |     239.365µs |             ::1 | POST     "/users/"

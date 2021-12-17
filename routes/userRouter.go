@@ -21,7 +21,7 @@ func Routes(route *gin.Engine) {
 			c.JSON(http.StatusOK, UserController.FindAll())
 		})
 
-		user.GET("/", func(c *gin.Context) {
+		user.POST("/", func(c *gin.Context) {
 			err := UserController.Save(c)
 			if err != nil {
 				c.JSON(http.StatusBadRequest, gin.H{
