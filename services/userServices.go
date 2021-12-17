@@ -7,19 +7,19 @@ type UserService interface {
 	FindAll() []entity.Users
 }
 
-type userService struct {
+type service struct {
 	users []entity.Users
 }
 
 func New() UserService {
-	return &userService{}
+	return &service{}
 }
 
-func (service *userService) Save(user entity.Users) entity.Users {
+func (service *service) Save(user entity.Users) entity.Users {
 	service.users = append(service.users, user)
 	return user
 }
 
-func (service *userService) FindAll() []entity.Users {
+func (service *service) FindAll() []entity.Users {
 	return service.users
 }
